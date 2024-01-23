@@ -7,5 +7,6 @@ pipeline {
                 sh 'docker build -t docker.io/nader12bp/new-app'
             }
         }
+    }
 }
 
