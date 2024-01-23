@@ -12,14 +12,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                script {
-                    git branch: 'main', url: 'https://github.com/EngMohamedElEmam/spring-boot-app'
-                }
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 script {
